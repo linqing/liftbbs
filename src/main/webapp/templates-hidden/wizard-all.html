@@ -1,0 +1,30 @@
+<div>
+  <wizard:screen_info><div>Page <wizard:screen_number/> of <wizard:total_screens/></div></wizard:screen_info>
+  <wizard:wizard_top> <div> <wizard:bind/> </div> </wizard:wizard_top>
+  <wizard:screen_top> <div> <wizard:bind/> </div> </wizard:screen_top>
+  <wizard:errors> <div> <ul> <wizard:item> <li> <wizard:bind/> </li> </wizard:item> </ul> </div> </wizard:errors>
+    <table lift:bind="wizard:fields">
+      <tr lift:bind="wizard:line">
+        <td>
+          <wizard:label><label wizard:for=""><wizard:bind></wizard:bind></label></wizard:label>
+          <wizard:help><span><wizard:bind></wizard:bind></span></wizard:help>
+        </td>
+        <td>
+          <wizard:form></wizard:form>
+        </td>
+        <td>
+          <wizard:field_errors> <ul> <wizard:error> <li> <wizard:bind/> </li> </wizard:error> </ul> </wizard:field_errors>
+        </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td><wizard:prev></wizard:prev></td>
+        <td><wizard:cancel></wizard:cancel></td>
+        <td><wizard:next></wizard:next></td>
+      </tr>
+    </table>
+
+  <wizard:screen_bottom> <div> <wizard:bind></wizard:bind> </div> </wizard:screen_bottom>
+  <wizard:wizard_bottom> <div> <wizard:bind></wizard:bind> </div> </wizard:wizard_bottom>
+</div>
