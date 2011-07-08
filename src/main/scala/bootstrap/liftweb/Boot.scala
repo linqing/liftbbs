@@ -19,17 +19,6 @@ class Boot {
     // where to search for snippets
     LiftRules.addToPackages("no.ovstetun")
 
-    // Build SiteMap
-    def sitemap = List(
-      Menu.i("Home") / "index",
-      Menu.i("En til") / "entil",
-      Menu.i("static") / "static" / **,
-      Menu.i("Og enda en som er litt lang2") / "lala2",
-      Menu.i("Og enda en som er litt lang3") / "lala3",
-      Menu.i("Og enda en som er litt lang4") / "lala4"
-	  )
-
-    LiftRules.setSiteMapFunc(() => SiteMap(sitemap: _*))
 
     //Show the spinny image when an Ajax call starts and dissapear when done
     LiftRules.ajaxStart = Full(() => LiftRules.jsArtifacts.show("ajax-loader").cmd)
