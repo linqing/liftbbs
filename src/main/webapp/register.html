@@ -1,0 +1,222 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="Discuz!,Board,Crossday Studio,PHP,MySQL,FORUM">
+<meta name="generator" content="Discuz! <b style='color: #FF9900'>2.2</b>F with Templates 2.0">
+<meta name="description" content="Discuz! Board - Powered by Discuz! Board <b style='color: #FF9900'>2.2</b>F">
+<meta name="MSSmartTagsPreventParsing" content="TRUE">
+<meta http-equiv="MSThemeCompatible" content="Yes">
+
+<title>Discuz! Board - powered by Discuz!</title>
+
+<style type="text/css">
+a:link,a:visited        { text-decoration: none; color: #003366 }
+a:hover                 { text-decoration: underline }
+body                    { scrollbar-base-color: #F8F8F8; scrollbar-arrow-color: #000000; font-size: 12px; background-image: url("images/default/bg.gif") }
+table                   { font-family: Tahoma, Verdana; color: #000000; font-size: 12px }
+textarea,input,object   { font-family: Tahoma, Verdana; font-size: 12px;  color: #000000; font-weight: normal; background-color: #F8F8F8 }
+select                  { font-family: Arial; font-size: 11px;  color: #000000; font-weight: normal; background-color: #F8F8F8 }
+.nav                    { font-family: Tahoma, Verdana; font-size: 12px; font-weight: bold }
+.navtd                  { font-family: Tahoma, Verdana; font-size: 12px; color: #FFFFFF; text-decoration: none }
+.header                 { font-family: Tahoma, Verdana; font-size: 11px; color: #FFFFFF; font-weight: bold; background-image: url("images/default/headerbg.gif") }
+.category               { font-family: Arial; font-size: 11px; color: #000000; background-image: url("images/default/catbg.gif") }
+.multi                  { font-family: Arial; font-size: 11px; color: #003366; }
+.smalltxt               { font-family: Arial; font-size: 11px }
+.mediumtxt              { font-family: Tahoma, Verdana; font-size: 12px; color: #000000 }
+.bold                   { font-weight: bold }
+</style><script language="JavaScript" src="include/common.js"></script>
+
+</head>
+<body leftmargin="0" rightmargin="0" topmargin="0"  class="lift:content_id=main">
+<div id="main" class="lift:surround?with=default&at=content">
+
+<table cellspacing="0" cellpadding="0" border="0" background="images/default/topbg.gif" width="100%" align="center">
+<tr><td><a href="index"><img src="images/default/logo.gif" alt="" border="0"></a></td>
+<td width="517" align="right" background="images/default/topbg_right.gif">&nbsp;</td></tr>
+<tr><td colspan="2"><table width="100%" cellpadding="0" cellspacing="4">
+<tr><td class="navtd"><span class="bold">&raquo;</span>
+<span class="bold">游客: &nbsp;</span><a href="register"><font class="navtd">注册</font></a>
+| <a href="logging?action=login"><font class="navtd">登录</font></a>
+| <a href="member?action=list"><font class="navtd">会员</font></a>
+ | <a href="faq"><font class="navtd">帮助</font></a>
+
+</td><td align="right"><a href="http://www.crossday.com/"><font class="navtd">返回 Crossday Studio</font></a>
+</td></tr></table></td></tr></table><br><br>
+<table bgcolor="#FFFFFF" width="98%" cellpadding="0" cellspacing="0" border="0" align="center">
+<tr><td><br>
+<table cellspacing="0" cellpadding="0" border="0" width="98%" align="center" style="table-layout: fixed">
+<tr><td class="nav" width="90%" nowrap>&nbsp;<a href="index">Discuz! Board</a> &raquo; 注册</td>
+<td align="right" width="10%"><a href="#bottom"><img src="images/default/arrow_dw.gif" border="0" align="absmiddle"></a></td>
+</tr></table><br>
+<form method="post" action="register?referer=http://192.168.56.101:808/">
+<table cellspacing="0" cellpadding="0" border="0" width="98%" align="center">
+<tr><td bgcolor="#000000">
+
+<table border="0" cellspacing="1" cellpadding="4" width="100%">
+<tr>
+<td colspan="2" class="header">注册 - 必填内容</td>
+</tr>
+
+<tr>
+<td bgcolor="#F8F8F8" width="21%">用户名:</td>
+<td bgcolor="#FFFFFF"><input type="text" name="username" size="25" maxlength="25"></td>
+</tr>
+<tr>
+<td bgcolor="#F8F8F8">密码:</td>
+<td bgcolor="#FFFFFF"><input type="password" name="password" size="25"></td>
+</tr><tr>
+<td bgcolor="#F8F8F8">确认密码:</td>
+<td bgcolor="#FFFFFF"><input type="password" name="password2" size="25"></td>
+</tr>
+<tr>
+<td bgcolor="#F8F8F8">Email:</td>
+<td bgcolor="#FFFFFF"><input type="text" name="email" size="25"></td>
+</tr>
+
+<tr>
+<td colspan="2" class="header">注册 - 选填内容</td>
+</tr>
+
+<tr>
+<td bgcolor="#F8F8F8">性别:</td>
+<td bgcolor="#FFFFFF">
+<input type="radio" name="gendernew" value="1"> 男 &nbsp;
+<input type="radio" name="gendernew" value="2"> 女 &nbsp;
+<input type="radio" name="gendernew" value="0" checked> 保密
+</td></tr>
+
+<tr>
+<td bgcolor="#F8F8F8">生日:</td>
+<td bgcolor="#FFFFFF">
+<input type="text" name="year" size="4"> 年
+<select name="month">
+<option value="">&nbsp;</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select> 月
+<select name="day">
+<option value="">&nbsp;</option>
+<option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select> 日
+</td></tr>
+
+<tr>
+<td bgcolor="#F8F8F8">来自:</td>
+<td bgcolor="#FFFFFF"><input type="text" name="locationnew" size="25"></td>
+</tr>
+
+<tr>
+<td bgcolor="#F8F8F8">主页:</td>
+<td bgcolor="#FFFFFF"><input type="text" name="site" size="25"></td>
+</tr>
+
+<tr>
+<td bgcolor="#F8F8F8">OICQ:</td>
+<td bgcolor="#FFFFFF"><input type="text" name="oicq" size="25"></td>
+</tr>
+
+<tr>
+<td bgcolor="#F8F8F8">ICQ:</td>
+<td bgcolor="#FFFFFF"><input type="text" name="icq" size="25"></td>
+</tr>
+
+<tr>
+<td bgcolor="#F8F8F8">Yahoo:</td>
+<td bgcolor="#FFFFFF"><input type="text" name="yahoo" size="25"></td>
+</tr>
+
+<tr>
+<td bgcolor="#F8F8F8">MSN:</td>
+<td bgcolor="#FFFFFF"><input type="text" name="msn" size="25"></td>
+</tr>
+
+<tr>
+<td bgcolor="#F8F8F8">自我介绍:</td>
+<td bgcolor="#FFFFFF"><textarea rows="5" cols="30" name="bio"></textarea></td>
+</tr>
+
+<tr>
+<td colspan="2" class="header">注册 - 论坛个性化设置</td>
+</tr>
+
+<tr>
+<td bgcolor="#F8F8F8">界面风格:</td>
+<td bgcolor="#FFFFFF"><select name="styleidnew">
+<option value="">--使用默认--</option>
+<option value="1">Default Style</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="#F8F8F8">每页主题数:</td>
+<td bgcolor="#FFFFFF"><select name="tppnew">
+<option value="0">--使用默认--</option>
+<option value="10">10</option>
+<option value="20">20</option>
+<option value="30">30</option>
+</select></td>
+</tr>
+
+<tr>
+<td bgcolor="#F8F8F8">每页贴数:</td>
+<td bgcolor="#FFFFFF"><select name="pppnew">
+<option value="0">--使用默认--</option>
+<option value="5">5</option>
+<option value="10">10</option>
+<option value="15">15</option>
+</select></td>
+</tr>
+
+<tr>
+<td bgcolor="#F8F8F8">时间格式:</td>
+<td bgcolor="#FFFFFF"><input type="radio" value="24" name="timeformatnew">24 小时
+<input type="radio" value="12" name="timeformatnew" checked="checked">12 小时</td>
+</tr>
+<tr>
+<td bgcolor="#F8F8F8">日期格式:<br><span class="smalltxt">(yyyy/mm/ddm, mm/dd/yy 等)</span></td>
+<td bgcolor="#FFFFFF"><input type="text" name="dateformatnew" size="25" value="yyyy-mm-dd"></td>
+</tr>
+
+<tr>
+<td bgcolor="#F8F8F8">其他选项:</td>
+<td bgcolor="#FFFFFF">
+<input type="checkbox" name="showemail" value="1" checked="checked"> Email 地址可见<br>
+<input type="checkbox" name="newsletter" value="1" checked="checked"> 同意接收论坛通知 (Email 或短消息)<br>
+<input type="text" name="timeoffsetnew" value="8" size="3"> 时间较正 (北京时间 +8)，目前GMT标准时间 08:14 PM<br></td>
+</tr>
+<tr>
+<td bgcolor="#F8F8F8">个人签名
+:<br><br>
+<span class="smalltxt">
+<a href="faq?page=misc#1" target="_blank">Discuz! 代码</a> 状态 Off<br>
+[img] 代码 状态 Off</span></td>
+<td bgcolor="#FFFFFF"><textarea rows="4" cols="30" name="sig"></textarea></td>
+</tr>
+
+</table>
+</td></tr></table><br>
+<center><input type="submit" name="regsubmit" value="注册"></center>
+</form>
+
+<br></td></tr></table><br>
+
+<br><br><center><span class="mediumtxt">
+&lt; <a href="mailto:admin@domain.com" class="mediumtxt">联系我们</a> - <a href="http://www.crossday.com/" class="mediumtxt" target="_blank">Crossday Studio</a> &gt;</span>
+<br><br><br><span style="color: #000000; font-size: 11px; font-family: Tahoma, Arial">
+Powered by <a href="http://www.Discuz.net" style="color: #000000" target="_blank"><b>Discuz!</b> <b style='color: #FF9900'>2.2</b>F</a>
+&copy; 2002-2004, <a href="http://www.comsenz.com" target="_blank" style="color: #000000">Comsenz Technology Ltd</a>
+<br>Processed in 0.019486 second(s), 5 queries</span></center><a name="#bottom"></a>
+</div>
+</body>
+</html>

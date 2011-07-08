@@ -1,0 +1,96 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="Discuz!,Board,Crossday Studio,PHP,MySQL,FORUM">
+<meta name="generator" content="Discuz! <b style='color: #FF9900'>2.2</b>F with Templates 2.0">
+<meta name="description" content="Discuz! Board - Powered by Discuz! Board <b style='color: #FF9900'>2.2</b>F">
+<meta name="MSSmartTagsPreventParsing" content="TRUE">
+<meta http-equiv="MSThemeCompatible" content="Yes">
+
+<title>Discuz! Board - powered by Discuz!</title>
+
+<style type="text/css">
+a:link,a:visited        { text-decoration: none; color: #003366 }
+a:hover                 { text-decoration: underline }
+body                    { scrollbar-base-color: #F8F8F8; scrollbar-arrow-color: #000000; font-size: 12px; background-image: url("images/default/bg.gif") }
+table                   { font-family: Tahoma, Verdana; color: #000000; font-size: 12px }
+textarea,input,object   { font-family: Tahoma, Verdana; font-size: 12px;  color: #000000; font-weight: normal; background-color: #F8F8F8 }
+select                  { font-family: Arial; font-size: 11px;  color: #000000; font-weight: normal; background-color: #F8F8F8 }
+.nav                    { font-family: Tahoma, Verdana; font-size: 12px; font-weight: bold }
+.navtd                  { font-family: Tahoma, Verdana; font-size: 12px; color: #FFFFFF; text-decoration: none }
+.header                 { font-family: Tahoma, Verdana; font-size: 11px; color: #FFFFFF; font-weight: bold; background-image: url("images/default/headerbg.gif") }
+.category               { font-family: Arial; font-size: 11px; color: #000000; background-image: url("images/default/catbg.gif") }
+.multi                  { font-family: Arial; font-size: 11px; color: #003366; }
+.smalltxt               { font-family: Arial; font-size: 11px }
+.mediumtxt              { font-family: Tahoma, Verdana; font-size: 12px; color: #000000 }
+.bold                   { font-weight: bold }
+</style><script language="JavaScript" src="include/common.js"></script>
+
+</head>
+<body leftmargin="0" rightmargin="0" topmargin="0"  class="lift:content_id=main">
+<div id="main" class="lift:surround?with=default&at=content">
+
+<table cellspacing="0" cellpadding="0" border="0" background="images/default/topbg.gif" width="100%" align="center">
+<tr><td><a href="index"><img src="images/default/logo.gif" alt="" border="0"></a></td>
+<td width="517" align="right" background="images/default/topbg_right.gif">&nbsp;</td></tr>
+<tr><td colspan="2"><table width="100%" cellpadding="0" cellspacing="4">
+<tr><td class="navtd"><span class="bold">&raquo;</span>
+<span class="bold">linqing: &nbsp;</span><a href="logging?action=logout"><font class="navtd">退出</font></a>
+| <a href="pm" target="_blank"><font class="navtd">短消息</font></a>
+| <a href="memcp"><font class="navtd">控制面板</font></a>
+| <a href="member?action=list"><font class="navtd">会员</font></a>
+| <a href="search"><font class="navtd">搜索</font></a>
+ | <a href="faq"><font class="navtd">帮助</font></a>
+
+</td><td align="right"><a href="http://www.crossday.com/"><font class="navtd">返回 Crossday Studio</font></a>
+</td></tr></table></td></tr></table><br><br>
+<table bgcolor="#FFFFFF" width="98%" cellpadding="0" cellspacing="0" border="0" align="center">
+<tr><td><br>
+
+<table cellspacing="0" cellpadding="0" border="0" width="98%" align="center" style="table-layout: fixed">
+<tr><td class="nav" width="90%" nowrap>&nbsp;<a href="index">Discuz! Board</a> &raquo;
+<a href="memcp">控制面板</a> &raquo;
+订阅列表
+</td><td align="right" width="10%"><a href="#bottom"><img src="images/default/arrow_dw.gif" border="0" align="absmiddle"></a></td>
+</tr></table><br>
+
+<table cellpadding="0" cellspacing="0" border="0" bgcolor="#000000" width="98%" align="center">
+<tr><td>
+<table cellspacing="1" cellpadding="4" border="0" width="100%">
+<tr align="center" bgcolor="#FFFFFF" class="smalltxt">
+<td width="20%"><a href="memcp">控制面板首页</a></td>
+<td width="20%"><a href="memcp?action=profile">编辑个人资料</a></td>
+<td bgcolor="#F8F8F8" width="20%">订阅列表</td>
+<td width="20%"><a href="memcp?action=favorites">收藏夹</a></td>
+<td><a href="pm" target="_blank" width="20%">短消息</a></td>
+</tr></table></td></tr></table><br>
+<form method="post" action="memcp?action=subscriptions">
+<table cellspacing="0" cellpadding="0" border="0" width="98%"
+align="center">
+<tr><td bgcolor="#000000">
+
+<table border="0" cellspacing="1" cellpadding="4" width="100%">
+<tr align="center" class="header">
+<td width="45"><input type="checkbox" name="chkall" class="header" onclick="checkall(this.form)">删?</td>
+<td colspan=2 width="45%" align="center">标题</td>
+<td align="center">论坛</td>
+<td align="center">回复</td>
+<td align="center">最后发表</td>
+</tr>
+<td bgcolor="#F8F8F8" colspan="6">目前没有被订阅的主题。</td></tr>
+</table></td></tr></table><br>
+<center><input type="submit" name="subsubmit" value="提 &nbsp; 交"></center>
+</form>
+
+<br></td></tr></table><br>
+
+<br><br><center><span class="mediumtxt">
+&lt; <a href="mailto:admin@domain.com" class="mediumtxt">联系我们</a> - <a href="http://www.crossday.com/" class="mediumtxt" target="_blank">Crossday Studio</a> &gt;</span>
+<br><br><br><span style="color: #000000; font-size: 11px; font-family: Tahoma, Arial">
+Powered by <a href="http://www.Discuz.net" style="color: #000000" target="_blank"><b>Discuz!</b> <b style='color: #FF9900'>2.2</b>F</a>
+&copy; 2002-2004, <a href="http://www.comsenz.com" target="_blank" style="color: #000000">Comsenz Technology Ltd</a>
+<br>Processed in 0.025001 second(s), 3 queries</span></center><a name="#bottom"></a>
+</div>
+</body>
+</html>
