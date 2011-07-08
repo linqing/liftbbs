@@ -1,1 +1,1 @@
-java -Xmx512M ${SBT_OPTS} -jar ~/bin/sbt-launch.jar "$@"
+java -Xmx512M ${SBT_OPTS} -jar ./sbt-launch.jar "$@"
