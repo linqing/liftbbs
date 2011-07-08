@@ -1,0 +1,234 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="Discuz!,Board,Crossday Studio,PHP,MySQL,FORUM">
+<meta name="generator" content="Discuz! <b style='color: #FF9900'>2.2</b>F with Templates 2.0">
+<meta name="description" content="Discuz! Board - Powered by Discuz! Board <b style='color: #FF9900'>2.2</b>F">
+<meta name="MSSmartTagsPreventParsing" content="TRUE">
+<meta http-equiv="MSThemeCompatible" content="Yes">
+
+<title>Discuz! Board - 默认板块  - powered by Discuz!</title>
+
+<style type="text/css">
+a:link,a:visited        { text-decoration: none; color: #003366 }
+a:hover                 { text-decoration: underline }
+body                    { scrollbar-base-color: #F8F8F8; scrollbar-arrow-color: #000000; font-size: 12px; background-image: url("images/default/bg.gif") }
+table                   { font-family: Tahoma, Verdana; color: #000000; font-size: 12px }
+textarea,input,object   { font-family: Tahoma, Verdana; font-size: 12px;  color: #000000; font-weight: normal; background-color: #F8F8F8 }
+select                  { font-family: Arial; font-size: 11px;  color: #000000; font-weight: normal; background-color: #F8F8F8 }
+.nav                    { font-family: Tahoma, Verdana; font-size: 12px; font-weight: bold }
+.navtd                  { font-family: Tahoma, Verdana; font-size: 12px; color: #FFFFFF; text-decoration: none }
+.header                 { font-family: Tahoma, Verdana; font-size: 11px; color: #FFFFFF; font-weight: bold; background-image: url("images/default/headerbg.gif") }
+.category               { font-family: Arial; font-size: 11px; color: #000000; background-image: url("images/default/catbg.gif") }
+.multi                  { font-family: Arial; font-size: 11px; color: #003366; }
+.smalltxt               { font-family: Arial; font-size: 11px }
+.mediumtxt              { font-family: Tahoma, Verdana; font-size: 12px; color: #000000 }
+.bold                   { font-weight: bold }
+</style><script language="JavaScript" src="include/common.js"></script>
+
+</head>
+<body leftmargin="0" rightmargin="0" topmargin="0"  class="lift:content_id=main">
+<div id="main" class="lift:surround?with=default&at=content">
+<table cellspacing="0" cellpadding="0" border="0" background="images/default/topbg.gif" width="100%" align="center">
+<tr><td><a href="index"><img src="images/default/logo.gif" alt="" border="0"></a></td>
+<td width="517" align="right" background="images/default/topbg_right.gif">&nbsp;</td></tr>
+<tr><td colspan="2"><table width="100%" cellpadding="0" cellspacing="4">
+<tr><td class="navtd"><span class="bold">&raquo;</span>
+<span class="bold">linqing: &nbsp;</span><a href="logging?action=logout"><font class="navtd">退出</font></a>
+| <a href="pm" target="_blank"><font class="navtd">短消息</font></a>
+| <a href="memcp"><font class="navtd">控制面板</font></a>
+| <a href="member?action=list"><font class="navtd">会员</font></a>
+| <a href="search"><font class="navtd">搜索</font></a>
+ | <a href="faq"><font class="navtd">帮助</font></a>
+
+</td><td align="right"><a href="http://www.crossday.com/"><font class="navtd">返回 Crossday Studio</font></a>
+</td></tr></table></td></tr></table><br><br>
+<table bgcolor="#FFFFFF" width="98%" cellpadding="0" cellspacing="0" border="0" align="center">
+<tr><td><br>
+<table cellspacing="0" cellpadding="0" border="0" width="98%" align="center" style="table-layout: fixed">
+<tr><td class="nav" width="90%" nowrap>&nbsp;<a href="index">Discuz! Board</a> &raquo; <a href="forumdisplay?fid=1">默认板块</a>  &raquo; 发新话题</td>
+<td align="right" width="10%"><a href="#bottom"><img src="images/default/arrow_dw.gif" border="0" align="absmiddle"></a></td>
+</tr></table><br>
+
+<script language="JavaScript">
+var postmaxchars = 10000;
+var isadmin = 0;
+function checklength(theform) {
+        if (postmaxchars != 0) { message = "系统限制: 10000 字节"; }
+        else { message = ""; }
+        alert("\n当前长度: "+theform.message.value.length+" 字节\n\n"+message);
+}
+function validate(theform) {
+        if (theform.subject.value == "" || theform.message.value == "") {
+                alert("请完成标题或内容栏。");
+                return false; }
+        if (postmaxchars != 0 && isadmin != 1) {
+                if (theform.message.value.length > 10000) {
+                        alert("您的帖子长度超过限制\n\n当前长度: "+theform.message.value.length+" 字节\n系统限制: 10000 字节");
+                        return false; }
+                else { return true; }
+        } else { return true; }
+}
+</script>
+<form method="post" name="input" action="post?action=newthread&fid=1"  onSubmit="return validate(this)">
+<input type="hidden" name="topicsubmit" value="submit">
+
+<table cellspacing="0" cellpadding="0" border="0" width="98%" align="center">
+<tr><td bgcolor="#000000">
+
+<table border="0" cellspacing="1" cellpadding="4" width="100%">
+<tr>
+<td colspan="2" class="header">发新话题</td>
+</tr>
+<tr><td bgcolor="#F8F8F8">用户名:</td>
+<td bgcolor="#FFFFFF">linqing <span class="smalltxt">[<a href="logging?action=logout">退出登录</a>]</span></td>
+</tr>
+<tr>
+<td bgcolor="#F8F8F8" width="20%">标题:</td>
+<td bgcolor="#FFFFFF"><input type="text" name="subject" size="45" value="" tabindex="3"></td>
+</tr>
+<tr><td bgcolor="#F8F8F8">图标:</td><td bgcolor="#FFFFFF"> <input type="radio" name="posticon" value="0" checked> 无  <input type="radio" name="posticon" value="icon1.gif"><img src="images/smilies/icon1.gif"> <input type="radio" name="posticon" value="icon2.gif"><img src="images/smilies/icon2.gif"> <input type="radio" name="posticon" value="icon3.gif"><img src="images/smilies/icon3.gif"> <input type="radio" name="posticon" value="icon4.gif"><img src="images/smilies/icon4.gif"> <input type="radio" name="posticon" value="icon5.gif"><img src="images/smilies/icon5.gif"> <input type="radio" name="posticon" value="icon6.gif"><img src="images/smilies/icon6.gif"> <input type="radio" name="posticon" value="icon7.gif"><img src="images/smilies/icon7.gif"> <input type="radio" name="posticon" value="icon8.gif"><img src="images/smilies/icon8.gif"> <input type="radio" name="posticon" value="icon9.gif"><img src="images/smilies/icon9.gif"><br></td></tr>
+<script language="JavaScript">
+var text_input = "文字";
+var help_mode = "Discuz! 代码 - 帮助信息\n\n点击相应的代码按钮即可获得相应的说明和提示";
+var adv_mode = "Discuz! 代码 - 直接插入\n\n点击代码按钮后不出现提示即直接插入相应代码";
+var normal_mode = "Discuz! 代码 - 提示插入\n\n点击代码按钮后出现向导窗口帮助您完成代码插入";
+var email_help = "插入邮件地址\n\n插入邮件地址连接。\n例如：\n[email]support@crossday.com[/email]\n[email=support@crossday.com]Dai Zhikang[/email]";
+var email_normal = "请输入链接显示的文字，如果留空则直接显示邮件地址。";
+var email_normal_input = "请输入邮件地址。";
+var fontsize_help = "设置字号\n\n将标签所包围的文字设置成指定字号。\n例如：[size=3]文字大小为 3[/size]";
+var fontsize_normal = "请输入要设置为指定字号的文字。";
+var font_help = "设定字体\n\n将标签所包围的文字设置成指定字体。\n例如：[font=仿宋]字体为仿宋[/font]";
+var font_normal = "请输入要设置成指定字体的文字。";
+var bold_help = "插入粗体文本\n\n将标签所包围的文本变成粗体。\n例如：[b]Crossday 工作室[/b]";
+var bold_normal = "请输入要设置成粗体的文字。";
+var italicize_help = "插入斜体文本\n\n将标签所包围的文本变成斜体。\n例如：[i]Crossday 工作室[/i]";
+var italicize_normal = "请输入要设置成斜体的文字。";
+var quote_help = "插入引用\n\n将标签所包围的文本作为引用特殊显示。\n例如：[quote]Discuz! 版权所有 - Crossday Studio[/quote]";
+var quote_normal = "请输入要作为引用显示的文字。";
+var color_help = "定义文本颜色\n\n将标签所包围的文本变为制定颜色。\n例如：[color=red]红颜色[/color]";
+var color_normal = "请输入要设置成指定颜色的文字。";
+var center_help = "居中对齐\n\n将标签所包围的文本居中对齐显示。\n例如：[align=center]内容居中[/align]";
+var center_normal = "请输入要居中对齐的文字。";
+var link_help = "插入超级链接\n\n插入一个超级连接。\n例如：\n[url]http://www.crossday.com[/url]\n[url=http://www.crossday.com]Crossday 工作室[/url]";
+var link_normal = "请输入链接显示的文字，如果留空则直接显示链接。";
+var link_normal_input = "请输入 URL。";
+var image_help = "插入图像\n\n在文本中插入一幅图像。\n例如：[img]http://www.crossday.com/cdb/images/logo.gif[/img]";
+var image_normal = "请输入图像的 URL。";
+var flash_help = "插入 flash\n\n在文本中插入 flash 动画。\n例如：[swf]http://www.crossday.com/cdb/images/banner.swf[/swf]";
+var flash_normal = "请输入 flash 动画的 URL。";
+var code_help = "插入代码\n\n插入程序或脚本原始代码。\n例如：[code]echo\"这里是我们的论坛\";[/code]";
+var code_normal = "请输入要插入的代码。";
+var list_help = "插入列表\n\n插入可由浏览器显示来的规则列表项。\n例如：\n[list]\n[*]；列表项 #1\n[*]；列表项 #2\n[*]；列表项 #3\n[/list]";
+var list_normal = "请选择列表格式：字母式列表输入 \"A\"；数字式列表输入 \"1\"。此处也可留空。";
+var list_normal_error = "错误：列表格式只能选择输入 \"A\" 或 \"1\"。";
+var list_normal_input = "请输入列表项目内容，如果留空表示项目结束。";
+var underline_help = "插入下划线\n\n给标签所包围的文本加上下划线。\n例如：[u]Crossday 工作室[/u]";
+var underline_normal = "请输入要加下划线的文字。";
+</script>
+
+<script language="JavaScript" src="include/bbcode.js"></script>
+<tr>
+<td bgcolor="#F8F8F8">Discuz! 代码<br><span class="smalltxt">
+<input type="radio" name="mode" value="2" onclick="chmode('2')" checked> 提示插入<br>
+<input type="radio" name="mode" value="0" onclick="chmode('0')"> 直接插入<br>
+<input type="radio" name="mode" value="1" onclick="chmode('1')"> 帮助信息
+</span></td><td bgcolor="#FFFFFF">
+<select name="font" onFocus="this.selectedIndex=0" onChange="chfont(this.options[this.selectedIndex].value)" size="1">
+<option value="宋体">宋体</option><option value="黑体">黑体</option>
+<option value="Arial">Arial</option>
+<option value="Book Antiqua">Book Antiqua</option>
+<option value="Century Gothic">Century Gothic</option>
+<option value="Courier New">Courier New</option>
+<option value="Georgia">Georgia</option>
+<option value="Impact">Impact</option>
+<option value="Tahoma">Tahoma</option>
+<option value="Times New Roman">Times New Roman</option>
+<option value="Verdana" selected>Verdana</option></select>
+<select name="size" onFocus="this.selectedIndex=2" onChange="chsize(this.options[this.selectedIndex].value)" size="1">
+<option value="-2">-2</option>
+<option value="-1">-1</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3" selected>3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option></select>
+<select name="color" onFocus="this.selectedIndex=1" onChange="chcolor(this.options[this.selectedIndex].value)" size="1">
+<option value="White" style="color:white;">White</option>
+<option value="Black" style="color:black;">Black</option>
+<option value="Red" style="color:red;">Red</option>
+<option value="Yellow" style="color:yellow;">Yellow</option>
+<option value="Pink" style="color:pink;">Pink</option>
+<option value="Green" style="color:green;">Green</option>
+<option value="Orange" style="color:orange;">Orange</option>
+<option value="Purple" style="color:purple;">Purple</option>
+<option value="Blue" style="color:blue;">Blue</option>
+<option value="Beige" style="color:beige;">Beige</option>
+<option value="Brown" style="color:brown;">Brown</option>
+<option value="Teal" style="color:teal;">Teal</option>
+<option value="Navy" style="color:navy;">Navy</option>
+<option value="Maroon" style="color:maroon;">Maroon</option>
+<option value="LimeGreen" style="color:limegreen;">LimeGreen</option></select>
+<br><br>
+<a href="javascript:bold()"><img src="images/default/bb_bold.gif" border="0" width="23" height="22" alt="插入粗体文本"></a>
+<a href="javascript:italicize()"><img src="images/default/bb_italicize.gif" border="0" width="23" height="22" alt="插入斜体文本"></a>
+<a href="javascript:underline()"><img src="images/default/bb_underline.gif" border="0" width="23" height="22" alt="插入下划线"></a>
+<a href="javascript:center()"><img src="images/default/bb_center.gif" border="0" width="23" height="22" alt="居中对齐"></a>
+<a href="javascript:hyperlink()"><img src="images/default/bb_url.gif" border="0" width="23" height="22" alt="插入超级链接"></a>
+<a href="javascript:email()"><img src="images/default/bb_email.gif" border="0" width="23" height="22" alt="插入邮件地址"></a>
+<a href="javascript:image()"><img src="images/default/bb_image.gif" border="0" width="23" height="22" alt="插入图像"></a>
+<a href="javascript:flash()"><img src="images/default/bb_flash.gif" border="0" width="23" height="22" alt="插入 flash"></a>
+<a href="javascript:code()"><img src="images/default/bb_code.gif" border="0" width="23" height="22" alt="插入代码"></a>
+<a href="javascript:quote()"><img src="images/default/bb_quote.gif" border="0" width="23" height="22" alt="插入引用"></a>
+<a href="javascript:list()"><img src="images/default/bb_list.gif" border="0" width="23" height="22" alt="插入列表"></a>
+</td></tr>
+<tr>
+<td bgcolor="#F8F8F8" valign="top">内容 <a href="###" onclick="checklength(document.input)" class="smalltxt">[字数检查]</a>:<br><br>
+<span class="smalltxt">
+html 状态 Off<br>
+<a href="faq?page=messages#6" target="_blank">Smilies</a> 状态 On<br>
+<a href="faq?page=misc#1" target="_blank">Discuz! 代码</a> 状态 On<br>
+[img] 代码 状态 On</span><br><br><br><br>
+<table cellpadding="3" cellspacing="1" border="0" bgcolor="#F8F8F8" style="border-width: 2px; border-style: outset" align="center">
+<tr><td colspan="3" align="center" bgcolor="#F8F8F8" style="border-width:1px; border-style:inset">Smilies</td></tr>
+<tr align='center'><tr><td align="center" valign="top"><img src="images/smilies/cool.gif" border="0" onmouseover="this.style.cursor='hand';" onclick="AddText(':cool:');"></td>
+<td align="center" valign="top"><img src="images/smilies/mad.gif" border="0" onmouseover="this.style.cursor='hand';" onclick="AddText(':mad:');"></td>
+<td align="center" valign="top"><img src="images/smilies/lol.gif" border="0" onmouseover="this.style.cursor='hand';" onclick="AddText(':lol:');"></td>
+</tr><tr><td align="center" valign="top"><img src="images/smilies/smile.gif" border="0" onmouseover="this.style.cursor='hand';" onclick="AddText(':)');"></td>
+<td align="center" valign="top"><img src="images/smilies/sad.gif" border="0" onmouseover="this.style.cursor='hand';" onclick="AddText(':(');"></td>
+<td align="center" valign="top"><img src="images/smilies/biggrin.gif" border="0" onmouseover="this.style.cursor='hand';" onclick="AddText(':D');"></td>
+</tr><tr><td align="center" valign="top"><img src="images/smilies/wink.gif" border="0" onmouseover="this.style.cursor='hand';" onclick="AddText(';)');"></td>
+<td align="center" valign="top"><img src="images/smilies/shocked.gif" border="0" onmouseover="this.style.cursor='hand';" onclick="AddText(':o');"></td>
+<td align="center" valign="top"><img src="images/smilies/tongue.gif" border="0" onmouseover="this.style.cursor='hand';" onclick="AddText(':P');"></td>
+</tr><tr></tr></table>
+</td>
+<td align="left" bgcolor="#FFFFFF" class="smalltxt">
+<textarea rows="18" cols="85" name="message" tabindex="4" onSelect="javascript: storeCaret(this);" onClick="javascript: storeCaret(this);" onKeyUp="javascript: storeCaret(this);" onKeyDown="javascript: ctlent();"></textarea>
+<br><br>
+<input type="checkbox" name="parseurloff" value="1" > 禁用 URL 识别<br>
+<input type="checkbox" name="smileyoff" value="1" > 禁用 <a href="faq?page=messages#6" target="_blank">Smilies</a><br>
+<input type="checkbox" name="bbcodeoff" value="1" > 禁用 <a href="faq?page=misc#1" target="_blank">Discuz! 代码</a><br>
+<input type="checkbox" name="usesig" value="1" checked> 使用个人签名<br>
+<input type="checkbox" name="emailnotify" value="1"> 接收新回复邮件通知
+</td>
+</tr>
+</table>
+</td></tr></table><br>
+<center><input type="submit" name="topicsubmit" value="发新话题" tabindex="5">
+<input type="submit" name="previewpost" value="预览帖子" tabindex="6">
+</center>
+</form>
+
+<br></td></tr></table><br>
+
+<br><br><center><span class="mediumtxt">
+&lt; <a href="mailto:admin@domain.com" class="mediumtxt">联系我们</a> - <a href="http://www.crossday.com/" class="mediumtxt" target="_blank">Crossday Studio</a> &gt;</span>
+<br><br><br><span style="color: #000000; font-size: 11px; font-family: Tahoma, Arial">
+Powered by <a href="http://www.Discuz.net" style="color: #000000" target="_blank"><b>Discuz!</b> <b style='color: #FF9900'>2.2</b>F</a>
+&copy; 2002-2004, <a href="http://www.comsenz.com" target="_blank" style="color: #000000">Comsenz Technology Ltd</a>
+<br>Processed in 0.038285 second(s), 3 queries</span></center><a name="#bottom"></a>
+</div>
+</body>
+</html>
