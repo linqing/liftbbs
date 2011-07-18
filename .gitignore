@@ -1,0 +1,8 @@
+.ensime
+lib_managed/
+project/boot/
+project/plugins/project/
+project/plugins/target/
+project/target/
+target/
+build/

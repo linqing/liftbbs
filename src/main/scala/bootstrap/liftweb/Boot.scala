@@ -15,9 +15,21 @@ import Loc._
  * to modify lift's environment
  */
 class Boot {
+
   def boot {
+    import net.liftweb.mapper.{DB, DefaultConnectionIdentifier, StandardDBVendor}
+    import net.liftweb.squerylrecord.SquerylRecord
+    import org.squeryl.adapters.MySQLAdapter
+
+    val dbVendor = new StandardDBVendor("com.mysql.jdbc.Driver", "jdbc:mysql://localhost:3306/discuz2", Full("root"), Full(""))
+    DB.defineConnectionManager(DefaultConnectionIdentifier, dbVendor)
+    S.addAround(DB.buildLoanWrapper)
+
+    SquerylRecord.init(() => new MySQLAdapter)
+
+
     // where to search for snippets
-    LiftRules.addToPackages("no.ovstetun")
+    LiftRules.addToPackages("liftbbs")
 
 
     //Show the spinny image when an Ajax call starts and dissapear when done
@@ -31,4 +43,5 @@ class Boot {
     LiftRules.early.append(_.setCharacterEncoding("UTF-8"))
     LiftRules.htmlProperties.default.set((r: Req) =>new Html5Properties(r.userAgent))
   }
+
 }

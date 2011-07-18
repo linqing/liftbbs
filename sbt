@@ -1,1 +1,1 @@
-java -Xmx512M ${SBT_OPTS} -jar ./sbt-launch.jar "$@"
+java -Xmx512M -Xss2M -XX:+CMSClassUnloadingEnabled -jar `dirname $0`/sbt-launcher.jar "$@"
