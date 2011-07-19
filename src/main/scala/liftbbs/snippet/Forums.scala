@@ -19,4 +19,9 @@ class Forums {
     "#forum *" #> forums.map( f => "@nameLink [href]" #> {"forumdisplay?fid=" + f.id} &
                              "@nameLink *" #> {f.name} )
   }
+
+  def display = {
+    "#topics *" #> topics.map(t => "@subjectLink [href]" #> {"viewthread?tid=" + t.id} &
+                             "@subjectLink *" #> {t.subject} )
+  }
 }

@@ -20,6 +20,13 @@ class Forum(
   val styleid: Int
 )
 
+class Topic(
+  @Column("tid")
+  val id: Long,
+  val author: String,
+  val subject: String
+)
+
 class Post(
   @Column("pid")
   val id: Long,
@@ -35,6 +42,7 @@ object BbsModel extends Schema {
         java.sql.DriverManager.getConnection("jdbc:mysql://localhost:3306/discuz2", "root", ""),
         new MySQLAdapter))
   }
-  val posts = table[Post]("cdb_posts")
   val forums = table[Forum]("cdb_forums")
+  val topics = table[Topic]("cdb_threads")
+  val posts = table[Post]("cdb_posts")
 }
