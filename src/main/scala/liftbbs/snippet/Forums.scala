@@ -24,4 +24,9 @@ class Forums {
     "#topics *" #> topics.map(t => "@subjectLink [href]" #> {"viewthread?tid=" + t.id} &
                              "@subjectLink *" #> {t.subject} )
   }
+
+  def viewthread = {
+    "#post *" #> posts.map(p => "@subject" #> {p.subject} &
+                             "@message" #> {p.message} )
+  }
 }

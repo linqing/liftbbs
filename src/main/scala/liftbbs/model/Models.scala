@@ -30,7 +30,8 @@ class Topic(
 class Post(
   @Column("pid")
   val id: Long,
-  val subject: String
+  val subject: String,
+  val message: String
 ) extends KeyedEntity[Long]
 
 
